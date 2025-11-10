@@ -149,7 +149,7 @@ const About: React.FC = () => {
                 Download Resume
               </a>
               <p className="text-xs text-gray-500 dark:text-gray-400 mt-3">
-                PDF format • Last updated: December 2024
+                PDF format • Last updated: November 2025
               </p>
             </div>
           </div>

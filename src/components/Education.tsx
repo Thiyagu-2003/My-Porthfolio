@@ -4,9 +4,21 @@ import { Award, BookOpen, ExternalLink } from 'lucide-react';
 const Education: React.FC = () => {
   const education = [
     {
+      degree: "AWS re/Start Cloud Computing Program",
+      institution: "Cultus Education & Technology Service",
+      year: ": Jul 2025 - Nov 2025",
+      college: "Sponsored by TNSDC & Naan Mudhalvan",
+      focus: "AWS Cloud, Linux, Python, MySQL, Networking, and Security",
+      achievements: [
+        "Completed 12-week AWS re/Start program",
+        "Hands-on experience in cloud fundamentals and problem-solving",
+        "Developed practical skills in Linux, Python scripting, and AWS services"]
+    },
+
+    {
       degree: "BCA (Bachelor of Computer Applications)",
       institution: "University of Madras",
-      year: "2022-2025",
+      year: ": 2022-2025",
       college: "Dharmamurthi Rao Bahadur Calavala Cunnan Chetty Hindu College",
       focus: "Computer Applications & IT",
       achievements: ["First Class with Distinction", "Project Leader", "Final Year Project: Python GUI Based Voice Assistant"]

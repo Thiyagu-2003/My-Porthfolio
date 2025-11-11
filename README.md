@@ -168,7 +168,7 @@ Add screenshots or demo GIFs here for visual impact:
 
 ## 📜 License
 
-This project is open source and available under the **MIT License**.
+This project is open source and available under the [MIT License](./LICENSE).
 
 ---
 
@@ -178,20 +178,9 @@ This project is open source and available under the **MIT License**.
 AWS Certified Cloud Practitioner | AWS re/Start Graduate | Cloud & DevOps Enthusiast
 
 🌐 [LinkedIn](https://www.linkedin.com/in/thiyagu-s)
-📧 [thiyagusofficial@gmail.com](mailto:thiyagusofficial@gmail.com)
+📧 [thiyagusofficial@gmail.com](mailto:sthiyagu466@gmail.com)
 💼 [GitHub](https://github.com/Thiyagu-2003)
 
 ---
 
 <p align="center">⭐ If you like this project, please consider starring the repository!</p>
-```
-
----
-
-Would you like me to generate a **custom banner image (PNG)** for the top of your README — e.g.
-
-> “Thiyagu S — AWS Certified Cloud Practitioner | Cloud & DevOps Portfolio”
-
-I can create one in a **modern gradient or dark theme** style that matches your website.
-
-

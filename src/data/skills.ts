@@ -14,7 +14,7 @@ export const skills: SkillCategory[] = [
     items: [
       { name: "Amazon EC2", image: "/asset/EC2.png" },
       { name: "Amazon S3", image: "/asset/s3.png" },
-      { name: "Amazon RDS", image: "/asset/rds.png" },
+      { name: "Amazon RDS", image: "/asset/RDS.png" },
       { name: "Amazon VPC", image: "/asset/vpc.png" }
     ]
   },

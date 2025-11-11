@@ -5,7 +5,7 @@
   <a href="https://teofila-unscaling-subspirally.ngrok-free.dev" target="_blank">
     🌐 Live Preview
   </a> • 
-  <a href="www.linkedin.com/in/thiyagu-s-ai" target="_blank">
+  <a href="https://www.linkedin.com/in/thiyagu-s-ai/" target="_blank">
     💼 LinkedIn
   </a> • 
   <a href="https://github.com/Thiyagu-2003" target="_blank">
@@ -193,4 +193,5 @@ Would you like me to generate a **custom banner image (PNG)** for the top of you
 > “Thiyagu S — AWS Certified Cloud Practitioner | Cloud & DevOps Portfolio”
 
 I can create one in a **modern gradient or dark theme** style that matches your website.
+
 

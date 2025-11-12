@@ -28,7 +28,7 @@ const About: React.FC = () => {
                 <div className="p-6">
                   <div className="w-32 h-32 mx-auto rounded-full overflow-hidden mb-4">
                     <img 
-                      src="https://images.pexels.com/photos/5952651/pexels-photo-5952651.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                      src="/Thiyagu2.png" 
                       alt="AI Engineer" 
                       className="w-full h-full object-cover"
                     />

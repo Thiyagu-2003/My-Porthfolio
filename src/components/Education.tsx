@@ -1,5 +1,9 @@
 import React from 'react';
-import { Award, BookOpen, ExternalLink } from 'lucide-react';
+import {ExternalLink } from 'lucide-react';
+
+
+//import { Award, BookOpen, ExternalLink } from 'lucide-react'; for medal and publication icons
+
 
 const Education: React.FC = () => {
   const education = [

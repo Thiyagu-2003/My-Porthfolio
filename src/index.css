@@ -23,15 +23,19 @@ body {
 
 /* Responsive text sizing */
 h1 {
-  @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl;
+  @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold tracking-tight;
 }
 
 h2 {
-  @apply text-2xl sm:text-3xl md:text-4xl;
+  @apply text-2xl sm:text-3xl md:text-4xl font-heading font-semibold tracking-tight;
 }
 
 h3 {
-  @apply text-xl sm:text-2xl md:text-3xl;
+  @apply text-xl sm:text-2xl md:text-3xl font-heading font-semibold tracking-tight;
+}
+
+h4, h5, h6 {
+  @apply font-heading font-medium;
 }
 
 /* Touch device optimizations */

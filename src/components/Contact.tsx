@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const Contact: React.FC = () => {
+  const headingAnimation = useScrollAnimation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -72,7 +74,7 @@ const Contact: React.FC = () => {
     <section id="contact" className="py-20">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div ref={headingAnimation.ref} className={`text-center mb-16 scroll-animate ${headingAnimation.isVisible ? 'visible' : ''}`}>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
           <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             I'm actively seeking entry-level opportunities in cloud computing
@@ -82,7 +84,7 @@ const Contact: React.FC = () => {
 
         {/* Main Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 max-w-6xl mx-auto">
-          
+
           {/* LEFT - Contact Info */}
           <div className="lg:col-span-2 bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md">
             <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
@@ -222,11 +224,10 @@ const Contact: React.FC = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className={`w-full px-4 py-3 rounded-lg border ${
-                      formErrors.name
+                    className={`w-full px-4 py-3 rounded-lg border ${formErrors.name
                         ? "border-red-500 dark:border-red-400"
                         : "border-gray-300 dark:border-gray-700"
-                    } bg-white dark:bg-gray-800 focus:ring-2 focus:ring-indigo-500`}
+                      } bg-white dark:bg-gray-800 focus:ring-2 focus:ring-indigo-500`}
                   />
                   {formErrors.name && (
                     <p className="text-red-500 text-sm">{formErrors.name}</p>
@@ -242,11 +243,10 @@ const Contact: React.FC = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className={`w-full px-4 py-3 rounded-lg border ${
-                      formErrors.email
+                    className={`w-full px-4 py-3 rounded-lg border ${formErrors.email
                         ? "border-red-500 dark:border-red-400"
                         : "border-gray-300 dark:border-gray-700"
-                    } bg-white dark:bg-gray-800 focus:ring-2 focus:ring-indigo-500`}
+                      } bg-white dark:bg-gray-800 focus:ring-2 focus:ring-indigo-500`}
                   />
                   {formErrors.email && (
                     <p className="text-red-500 text-sm">{formErrors.email}</p>
@@ -276,11 +276,10 @@ const Contact: React.FC = () => {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  className={`w-full px-4 py-3 rounded-lg border ${
-                    formErrors.message
+                  className={`w-full px-4 py-3 rounded-lg border ${formErrors.message
                       ? "border-red-500 dark:border-red-400"
                       : "border-gray-300 dark:border-gray-700"
-                  } bg-white dark:bg-gray-800 focus:ring-2 focus:ring-indigo-500`}
+                    } bg-white dark:bg-gray-800 focus:ring-2 focus:ring-indigo-500`}
                 />
                 {formErrors.message && (
                   <p className="text-red-500 text-sm">{formErrors.message}</p>

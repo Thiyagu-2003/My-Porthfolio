@@ -21,7 +21,7 @@
 // //               Passionate AWS Cloud Engineer with expertise in building intelligent systems
 // //             </p>
 // //           </div>
-          
+
 // //           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
 // //             <div className="col-span-1">
 // //               <div className="bg-white dark:bg-gray-900 rounded-xl shadow-md overflow-hidden">
@@ -33,10 +33,10 @@
 // //                       className="w-full h-full object-cover"
 // //                     />
 // //                   </div>
-                  
+
 // //                   <h3 className="text-xl font-bold text-center mb-2">Thiyagu S</h3>
 // //                   <p className="text-indigo-600 dark:text-indigo-400 text-center mb-4">AWS Cloud Practitioner</p>
-                  
+
 // //                   <div className="flex justify-center space-x-3">
 // //                     <a href="https://github.com/Thiyagu-2003" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-white transition-colors">
 // //                       <GitHub size={20} />
@@ -50,7 +50,7 @@
 // //                   </div>
 // //                 </div>
 // //               </div>
-              
+
 // //               <div className="mt-6 bg-white dark:bg-gray-900 rounded-xl shadow-md p-6">
 // //                 <h4 className="font-bold mb-4">Education</h4>
 // //                 <div className="space-y-3">
@@ -80,7 +80,7 @@
 // //                 </div>
 // //               </div>
 // //             </div>
-            
+
 // //             <div className="col-span-2">
 // //               <div className="bg-white dark:bg-gray-900 rounded-xl shadow-md p-6 mb-6">
 // //                 <h4 className="font-bold mb-4">Professional Summary</h4>
@@ -93,7 +93,7 @@
 // //                   </p>
 // //                 </div>
 // //               </div>
-              
+
 // //               <div className="bg-white dark:bg-gray-900 rounded-xl shadow-md p-6 mb-6">
 // //                 <h4 className="font-bold mb-6">Work Experience</h4>
 // //                 <div className="space-y-6">
@@ -120,7 +120,7 @@
 // //               </div>
 // //             </div>
 // //           </div>
-          
+
 // //           {/* Download Resume Section */}
 // //           <div className="text-center mt-12">
 // //             <div className="bg-white dark:bg-gray-900 rounded-xl shadow-md p-8 max-w-md mx-auto">
@@ -371,8 +371,12 @@
 
 import React from 'react';
 import { Github as GitHub, Linkedin, Mail } from 'lucide-react';
+import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const About: React.FC = () => {
+  const headingAnimation = useScrollAnimation();
+  const leftColumnAnimation = useScrollAnimation();
+  const rightColumnAnimation = useScrollAnimation({ threshold: 0.1 });
   const experience = [
     {
       title: "Cloud Computing Intern",
@@ -389,7 +393,7 @@ const About: React.FC = () => {
         <div className="max-w-5xl mx-auto">
 
           {/* Heading */}
-          <div className="text-center mb-16">
+          <div ref={headingAnimation.ref} className={`text-center mb-16 scroll-animate ${headingAnimation.isVisible ? 'visible' : ''}`}>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
             <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               Passionate AWS Cloud Engineer with expertise in building intelligent systems
@@ -399,7 +403,7 @@ const About: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-16">
 
             {/* LEFT COLUMN */}
-            <div className="col-span-1 flex flex-col space-y-6">
+            <div ref={leftColumnAnimation.ref} className={`col-span-1 flex flex-col space-y-6 scroll-animate-left ${leftColumnAnimation.isVisible ? 'visible' : ''}`}>
 
               {/* Profile Card */}
               <div className="bg-white dark:bg-gray-900 rounded-xl shadow-md p-6 flex flex-col items-center text-center flex-1">
@@ -498,11 +502,11 @@ const About: React.FC = () => {
                   </div>
                 </div>
               </div> */}
-              
+
             </div>
 
             {/* RIGHT COLUMN */}
-            <div className="col-span-2 flex flex-col space-y-6">
+            <div ref={rightColumnAnimation.ref} className={`col-span-2 flex flex-col space-y-6 scroll-animate-right ${rightColumnAnimation.isVisible ? 'visible' : ''}`}>
 
               {/* Professional Summary */}
               <div className="bg-white dark:bg-gray-900 rounded-xl shadow-md p-6">

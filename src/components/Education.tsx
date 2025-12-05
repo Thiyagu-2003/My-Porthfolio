@@ -1,11 +1,15 @@
 import React from 'react';
-import {ExternalLink } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
+import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 
 //import { Award, BookOpen, ExternalLink } from 'lucide-react'; for medal and publication icons
 
 
 const Education: React.FC = () => {
+  const headingAnimation = useScrollAnimation();
+  const leftColumnAnimation = useScrollAnimation();
+  const rightColumnAnimation = useScrollAnimation();
   const education = [
     {
       degree: "AWS re/Start Cloud Computing Program",
@@ -52,7 +56,7 @@ const Education: React.FC = () => {
   return (
     <section id="education" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div ref={headingAnimation.ref} className={`text-center mb-16 scroll-animate ${headingAnimation.isVisible ? 'visible' : ''}`}>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Education & Certifications</h2>
           <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             Academic background and professional certifications in Computer Applications and AWS Cloud Computing
@@ -61,7 +65,7 @@ const Education: React.FC = () => {
 
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* LEFT SIDE — ACADEMIC */}
-          <div className="lg:col-span-2">
+          <div ref={leftColumnAnimation.ref} className={`lg:col-span-2 scroll-animate-left ${leftColumnAnimation.isVisible ? 'visible' : ''}`}>
             <div className="bg-white dark:bg-gray-900 rounded-xl shadow-md p-8">
               <h3 className="text-2xl font-bold mb-6">Academic Education</h3>
 
@@ -107,7 +111,7 @@ const Education: React.FC = () => {
           </div>
 
           {/* RIGHT SIDE — CERTIFICATIONS */}
-          <div className="lg:col-span-1">
+          <div ref={rightColumnAnimation.ref} className={`lg:col-span-1 scroll-animate-right ${rightColumnAnimation.isVisible ? 'visible' : ''}`}>
 
             <div className="bg-white dark:bg-gray-900 rounded-xl shadow-md p-8 mb-8">
               <h3 className="text-2xl font-bold mb-6">Certifications</h3>

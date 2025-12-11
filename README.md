@@ -13,7 +13,7 @@
 [![Vite](https://img.shields.io/badge/Vite-5.4.21-646cff?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![TailwindCSS](https://img.shields.io/badge/Tailwind-3.4.1-38bdf8?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-[🌐 Live Demo](https://thiyagu-2003.github.io/My-Porthfolio-New/) • [📝 Report Bug](https://github.com/Thiyagu-2003/My-Porthfolio-New/issues) • [✨ Request Feature](https://github.com/Thiyagu-2003/My-Porthfolio-New/issues)
+[🌐 Live Demo](https://www.thiyagu.cloud/) • [📝 Report Bug](https://github.com/Thiyagu-2003/My-Porthfolio-New/issues) • [✨ Request Feature](https://github.com/Thiyagu-2003/My-Porthfolio-New/issues)
 
 </div>
 
@@ -274,6 +274,7 @@ This project is open source and available under the [MIT License](LICENSE).
 </p>
 
 ---
+
 
 
 

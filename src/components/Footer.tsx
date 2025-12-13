@@ -104,7 +104,7 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <ul className="space-y-2">
               <li className="text-gray-400">Chennai, India</li>
-              <li className="text-gray-400">sthiyagu466@gmail.com</li>
+              <li className="text-gray-400">thiyaguscloud@gmail.com</li>
               <li className="text-gray-400">+91 8015113607</li>
             </ul>
           </div>

@@ -89,7 +89,7 @@ const About: React.FC = () => {
                   </a>
 
                   <a
-                    href="mailto:sthiyagu466@gmail.com"
+                    href="mailto:thiyaguscloud@gmail.com"
                     className="text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-white transition-colors"
                   >
                     <Mail size={22} />

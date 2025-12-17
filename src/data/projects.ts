@@ -17,8 +17,8 @@ export const projects: ProjectType[] = [
     image: "/asset/Personal Portfolio on S3.png",
     technologies: ["Amazon S3", "CloudFront", "Route 53", "SSL/TLS"],
     category: "advanced",
-    github: "https://github.com/Thiyagu-2003/portfolio-s3",
-    demo: "https://portfolio.demo.com"
+    github: "https://github.com/Thiyagu-2003/AWS-Projects.git",
+    demo: "https://github.com/Thiyagu-2003/AWS-Projects.git"
   },
   {
     id: 2,

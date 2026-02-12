@@ -209,7 +209,7 @@ const About: React.FC = () => {
               </a>
 
               <p className="text-xs text-gray-500 dark:text-gray-400 mt-3">
-                PDF format • Last updated: January 2026
+                PDF format • Last updated: February 2026
               </p>
             </div>
           </div>

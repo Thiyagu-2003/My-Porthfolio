@@ -57,7 +57,7 @@ const Education: React.FC = () => {
       year: "2026",
       credentialId: "75ea92cc-1a07-4a10-a291-3758a0589de7",
       link: "https://www.credly.com/earner/earned/badge/75ea92cc-1a07-4a10-a291-3758a0589de7",
-      badge: "/linux-bage"
+      badge: "/linux-bage.png"
     },
   ];
 

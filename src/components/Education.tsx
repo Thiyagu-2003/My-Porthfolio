@@ -51,6 +51,14 @@ const Education: React.FC = () => {
       link: "https://www.credly.com/badges/8ca6f86f-663d-4308-9940-0e4c4661f07a/",
       badge: "/aws-re-start-graduate.png"
     },
+    {
+      name: "LFS101: Introduction to Linux",
+      issuer: "The Linux Foundation",
+      year: "2026",
+      credentialId: "75ea92cc-1a07-4a10-a291-3758a0589de7",
+      link: "https://www.credly.com/earner/earned/badge/75ea92cc-1a07-4a10-a291-3758a0589de7",
+      badge: "/linux-bage"
+    },
   ];
 
   return (
